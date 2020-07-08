@@ -1,0 +1,26 @@
+{
+  "name": "vendor_name/advertiseplatform",
+  "description": "Advertising",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Devin",
+      "email": "jindeq52@gmail.com"
+    }
+  ],
+  "require": {
+    "rakit/validation": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "AdPlatform\\": ""
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  }
+}
