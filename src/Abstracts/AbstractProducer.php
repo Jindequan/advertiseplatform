@@ -4,11 +4,10 @@
 namespace AdPlatform\Abstracts;
 
 
-use AdPlatform\Interfaces\InitParamInterface;
+use AdPlatform\Exception\SystemException;
+use AdPlatform\Interfaces\ProducerInterface;
 
-abstract class AbstractProducer implements InitParamInterface
+abstract class AbstractProducer implements ProducerInterface
 {
-    abstract public static function getInitParams();
 
-    abstract public static function setInitParams($params);
 }

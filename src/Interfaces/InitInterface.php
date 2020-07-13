@@ -4,7 +4,7 @@
 namespace AdPlatform\Interfaces;
 
 
-interface InitParamInterface
+interface InitInterface
 {
     public static function getInitParams();
 

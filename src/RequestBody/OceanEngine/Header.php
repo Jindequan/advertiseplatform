@@ -10,16 +10,26 @@ use AdPlatform\Abstracts\AbstractParam;
  * Class Header
  * @package AdPlatform\RequestBody\OceanEngine
  *
- * @property $access_token
- * @property $x_debug_model
+ * @property string $access_token
+ * @property int $x_debug_model
  */
 class Header extends AbstractParam
 {
-    public function build($param)
+    protected function rules(): array
     {
         return [
-            'Access-Token' => $this->access_token,
-            'X-Debug-Mode' => $this->x_debug_model,
+            'access_token' => 'required',
+            'x_debug_model' => 'numeric'
         ];
+    }
+
+    protected function genParams($params): array
+    {
+        // TODO: Implement genParams() method.
+    }
+
+    protected function genRequestParams($params)
+    {
+        // TODO: Implement genRequestParams() method.
     }
 }

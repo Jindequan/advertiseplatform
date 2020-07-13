@@ -6,5 +6,5 @@ namespace AdPlatform\Interfaces;
 
 interface ParamInterface
 {
-    public function build($param);
+    public function build($params) :array ;
 }

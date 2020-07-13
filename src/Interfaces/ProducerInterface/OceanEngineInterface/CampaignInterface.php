@@ -1,10 +1,7 @@
 <?php
 
-
 namespace AdPlatform\Interfaces\ProducerInterface\OceanEngineInterface;
 
-
-use phpDocumentor\Reflection\Types\Mixed_;
 
 interface CampaignInterface
 {

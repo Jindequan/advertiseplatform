@@ -2,14 +2,16 @@
 
 namespace AdPlatform\Exception;
 
-class ParamException extends BaseException
+class ApiException extends BaseException
 {
     public function exceptionCode(): array
     {
-        return [];
+        return [
+
+        ];
     }
 
-    public function __construct($message = "", $code = 0, \Throwable $previous = null)
+    public function __construct($message = "接口请求出错", $code = 0, \Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }

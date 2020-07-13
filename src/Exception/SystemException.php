@@ -2,7 +2,7 @@
 
 namespace AdPlatform\Exception;
 
-class ParamException extends BaseException
+class SystemException extends BaseException
 {
     public function exceptionCode(): array
     {
